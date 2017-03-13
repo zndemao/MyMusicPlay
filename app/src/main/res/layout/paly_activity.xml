@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_PlayTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0fff">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_48dp" />
+
+        <TextView
+            android:id="@+id/tv_PlayMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Music Name"
+            android:textColor="#f00"
+            android:textSize="24dp" />
+    </android.support.v7.widget.Toolbar>
+    <!--歌词显示区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="0:00"
+                android:textColor="#000" />
+
+            <SeekBar
+                android:id="@+id/seekBar_length"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="3:00"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/im_playState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_shuffle_black_48dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ib_upMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_skip_previous_black_48dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ib_playOrStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_play_circle_outline_black_48dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/ib_downMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_skip_next_black_48dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="0dp" />
+            <!--<ImageButton-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/ib_playList"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@android:drawable/ic_menu_sort_by_size" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

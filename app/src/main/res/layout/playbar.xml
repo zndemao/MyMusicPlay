@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_playBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_musicImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/nav_icon" />
+
+    <TextView
+        android:id="@+id/tv_musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/iv_musicImage"
+        android:text="南方姑娘"
+        android:textColor="#000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_musicAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_musicName"
+        android:layout_below="@+id/tv_musicName"
+        android:layout_marginTop="8dp"
+        android:text="赵雷" />
+
+    <ImageButton
+        android:id="@+id/ib_musicStartOrStop"
+        android:layout_width="64dp"
+        android:background="#0000"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
